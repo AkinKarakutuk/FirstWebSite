@@ -1,0 +1,512 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 135%;
+}
+
+
+
+
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.nav{
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow:hidden;
+    background: #663366;
+    border-bottom: 1px solid white;
+    z-index: 500;
+}
+
+.nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding:0;
+}
+
+
+.nav li {
+    display: inline-block;
+}
+
+
+
+.nav a {
+    display: block;
+    padding: 20px;
+    width: 150px;
+    font-size: 17px;
+    font-family: Helvetica;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    transition: all 1.2s;
+    border-radius: 5px;
+}
+
+
+.nav li a:hover:not(.showing) {
+    background-color: #99ebff;
+    color: purple;
+}
+
+.showing {
+    background-color: green;
+}
+
+.photo{
+ display: block;
+  position: relative;
+  margin-top: 62px;
+  background-image: url(img/2.jpg);
+  background-color:deepskyblue;/* Görsel Çalışmassa Arkaplan Rengi */
+  background-position:top; /* Görseli Ortala */
+  background-repeat: no-repeat; /* Resmi tekrarlama */
+  background-size:cover;/* resmi ekranı kaplayacak hale getir. */
+  width: 100%;
+  height: 35vh;
+  border-radius: 3px;
+  transition: all 0.7s;
+}
+
+
+.photo:hover{
+    display: block;
+    opacity: 0.9;
+    
+}
+.info{
+    position:absolute;
+    text-align: center;
+    
+}
+
+.name{
+    color: white;
+    text-align: center;
+    font-family: monospace;
+    font-size: 55px;
+}
+
+.information{
+    font-size: 32px;
+    line-height: 100%;
+    word-spacing: 2px;
+    text-indent: 25px;
+    text-align:justify-all;
+    color: gainsboro;
+    vertical-align: baseline;
+}
+
+
+
+.ikon{
+    color: ghostwhite;
+    margin-right: 15px;
+    opacity: 0.9;
+    transition: all 0.7s;
+    
+}
+
+.ikon:hover{
+    opacity: 0.5;
+    color:purple;
+}
+
+
+
+.baslik1{
+  text-align: center;
+   font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: capitalize;
+    color:dodgerblue;
+    transition: all 0.7s;
+    opacity: 0.9;
+    text-decoration: underline;
+    text-decoration-color:purple;
+    text-decoration-style:wavy;
+}
+
+
+.baslik1:hover{
+    opacity: 0.7;
+}
+
+
+
+
+.example{
+width: 1200px;
+margin-left: 200px;
+
+}
+
+.sola-kaydir{
+width: 350px;
+height: 350px;
+border-radius: 15%;
+border: 2px solid lightblue;
+float:left;
+margin-right: 50px;
+margin-bottom: 15px;
+object-fit:cover;
+box-sizing: border-box;
+transition: opacity 0.7s;
+}
+
+
+.sola-kaydir:hover{
+    opacity: 0.9;
+}
+
+.second-text{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.paragraph2{
+    font-size: 20px;
+    color: #777;
+    font-family: 'Athiti', sans-serif; 
+    margin: 0 0 10px;
+    display: block;
+    text-align:justify;
+    line-height: 125%;
+
+}
+
+
+.station{
+    display: block;
+    margin-bottom: 87px;
+}
+
+.about-text .btn{
+    position: relative;
+    width: 250px;
+    height: 45px;
+    border: 2px solid lightblue;
+    margin: 15px;
+    text-align: center;
+    line-height: 40px;
+    overflow: hidden;
+    border-radius: 10px;
+    float: left;
+}
+
+.about-text .btn a{
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:lightblue;
+    letter-spacing: 3px;
+    font-weight:100px;
+    z-index: 2;
+    transition: all 0.5 ease;
+}
+
+.about-text .btn.btn_1:before {
+    content: "";
+    position: absolute;
+    top:-60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: skewY(10deg);
+    transition: all 0.5s ease;
+    background:lightblue;
+}
+
+
+.about-text .btn a:hover{color: white;}
+
+.about-text .btn.btn_1:after {
+    content: "";
+    position: absolute;
+    top:60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: skewY(10deg);
+    transition: all 0.5s ease;
+    background:lightblue;
+}
+
+
+.about-text .btn.btn_1:hover:before{top:-20px;}
+
+
+.about-text .btn.btn_1:hover:after{top:20px;}
+
+
+
+.skills{
+    background:lightgrey;
+    font-family: 'Playfair Display', serif;
+    list-style: none;
+    padding: 0;
+    border: 1px solid lightblue;
+}
+
+.skills2{
+    width: 500px;
+    margin: 30px auto;
+    color:purple;
+}
+
+.skills2 li{
+    margin: 20px 0;
+}
+
+.bar{
+    background: #353b48;
+    display: block;
+    height: 2px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;    
+}
+
+.bar span{
+    height: 2px;
+    float: left;
+    background: #2187e7;
+}
+
+
+
+.html{
+    width: 90%;
+    animation: html 2s;
+}
+
+.css{
+    width: 75%;
+    animation: css 2s;
+}
+
+.javascript{
+    width: 50%;
+    animation:javascript 2s;
+}
+
+.flutter{
+    width: 35%;
+    animation: flutter 2s;
+}
+
+.java{
+    width: 50%;
+    animation: java 2s;
+}
+
+.ruby{
+    width: 40%;
+    animation: ruby 2s;
+}
+
+.csharp{
+    width: 45%;
+    animation: csharp 2s;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    
+    100%{
+        width: 75%;
+    }
+}
+
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes flutter{
+    0%{
+        width: 0%;
+    }
+    
+    100%{
+        width: 35%;
+    }
+}
+
+
+@keyframes java{
+    0%{
+        width: 0%;
+    }
+    
+    100%{
+        width: 50%;
+    }
+}
+
+
+@keyframes ruby{
+    0%{
+        width: 0%;
+    }
+    
+    100%{
+        width: 40%;
+    }
+}
+
+
+@keyframes csharp{
+    0%{
+        width: 0%;
+    }
+    
+    100%{
+        width: 45%;
+    }
+}
+
+.resume{
+    border: 1px solid green;
+    padding: 50px 50px;
+    height: 300px;
+    background-color: whitesmoke;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    
+}
+
+.resume h3{
+    margin-top: 0;
+}
+
+.resume1{
+    display: inline-block;
+    float: left;
+    width: 50%;
+    background-color:gainsboro;
+    color: purple;
+    border-bottom-left-radius:   10px;
+    border-top-right-radius: 10px;
+}
+
+.resume1::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.resume2{
+    float: right;
+    width: 50%;
+    display:block;
+    background-color:lightgrey;
+    color: purple;
+    text-indent: 10px;
+    border-bottom-left-radius:   10px;
+    border-top-right-radius: 10px;
+    
+}
+
+.resume2::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.resume3{
+    text-align: end;
+}
+
+.resume4{
+    text-align: left;
+}
+
+.contect{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 150px;
+    background-color:lightslategray;
+}
+
+.contect h3{
+    padding-top: 25px;
+    margin-top: 0;
+}
+
+.contect .first{
+    width: 33.3%;
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    float: left;
+    color:aquamarine;
+   
+}
+
+.contect .first::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.generally{
+   padding-left: 90px;
+}
+
+ .generally .ikon{
+    opacity: 0.9;
+    transition: all 0.7s;
+    color:aquamarine;
+}
+
+.generally .ikon:hover{
+     opacity: 0.5;
+    color:purple;
+
+}
+
+
+
+.footer{
+    padding: 2px 0px;
+    margin: 0px;
+    height:auto;
+    width: 100%;
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+}
+
